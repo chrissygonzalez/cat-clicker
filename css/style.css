@@ -1,0 +1,17 @@
+body {
+	margin: 0;
+}
+
+img {
+	width: 50%;
+	float: left;
+}
+
+p {
+	color: #666;
+	font: 2em 'Helvetica' sans-serif;
+	float:right;
+	width: 50%;
+	text-align: center;
+	margin-top: 50px;
+}
