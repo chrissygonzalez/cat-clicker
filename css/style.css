@@ -3,15 +3,29 @@ body {
 }
 
 img {
-	width: 50%;
-	float: left;
+	width: 100%;
 }
 
 p {
 	color: #666;
-	font: 2em 'Helvetica' sans-serif;
-	float:right;
-	width: 50%;
+	font: 16px 'Helvetica' sans-serif;
+	line-height: 24px;
+	margin: 0;
+	width: 100%;
 	text-align: center;
-	margin-top: 50px;
+}
+
+p:nth-child(2) {
+	margin-top: 20px;
+}
+
+.container {
+	display: flex;
+	flex-direction: row;
+	margin: 10px;
+}
+
+section {
+	padding: 10px;
+	width: 50%;
 }
