@@ -1,9 +1,13 @@
 body {
 	margin: 0;
+	display: flex;
+	font-family: Arial, sans-serif;
+	font-size: 16px;
 }
 
 img {
 	width: 100%;
+	max-width: 100%;
 }
 
 p {
@@ -13,6 +17,36 @@ p {
 	margin: 0;
 	width: 100%;
 	text-align: center;
+}
+
+fieldset {
+	border: none;
+	margin-top: 40px;
+	padding: none;
+}
+
+legend {
+	margin-left: 28px;
+	font-weight: bold;
+}
+
+label {
+	display: block;
+	text-align: left;
+	margin-left: 32px;
+	font-size: 14px;
+}
+
+input {
+	margin-left: 30px;
+	width: 75%;
+	color: gray;
+	padding: 2px 5px;
+}
+
+.label {
+	margin-top: 10px;
+	text-align: left;
 }
 
 p:nth-child(2) {
@@ -28,4 +62,53 @@ p:nth-child(2) {
 section {
 	padding: 10px;
 	width: 50%;
+}
+
+.nav {
+	padding: 0;
+	width: 225px
+}
+
+#adminBtn,
+#saveBtn,
+#cancelBtn {
+	margin-left: 45px;
+	cursor: pointer;
+	border: 1px solid teal;
+	background-color: #fff;
+	color: teal;
+	padding: 5px 10px;
+	font-size: 13px;
+}
+
+#saveBtn,
+#cancelBtn {
+	margin-left: 30px;
+}
+
+#adminBtn:hover,
+#saveBtn:hover,
+#cancelBtn:hover {
+	background-color: teal;
+	color: #fff;
+}
+
+button:focus {outline:0;}
+
+ul {
+	list-style-type: none;
+	margin-right: 40px;
+}
+
+li {
+	cursor: pointer;
+	padding: 5px;
+}
+
+li:hover {
+	background-color: yellow;
+}
+
+#catDisplay {
+	width: 60%;
 }

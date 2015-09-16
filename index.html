@@ -5,18 +5,38 @@
     <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
-	<div class="container">
-		<section>
-			<img id="cat1" src="images/Large_Siamese_cat_tosses_a_mouse.jpg" alt="cat">
-			<p id="cat1_name">Cat Name 1</p>
-			<p id="cat1_counter" class="counter">0 clicks</p>
-		</section>
+	<div class="nav">
+		<ul id="catList">
+		</ul>
+		<button id="adminBtn">Admin</button>
 
-		<section>
-			<img id="cat2" src="images/cat_new20151.jpg" alt="cat">
-			<p id="cat2_name">Cat Name 2</p>
-			<p id="cat2_counter" class="counter">0 clicks</p>
-		</section>
+		<form id="adminMode">
+			<fieldset>
+			    <legend>Edit Cat</legend>
+			    <p class="label">
+		    	<label for="editName">Name</label>
+			      <input type="text" name="editName" id="editName" />
+			    </p>
+			    <p class="label">
+		    	<label for="editPhoto">Image URL</label>
+			      <input type="text" name="editPhoto" id="editPhoto" />
+			    </p>
+			    <p class="label">
+		    	<label for="clicks">Clicks</label>
+			      <input type="text" name="clicks" id="clicks" />
+			    </p>
+			    <p class="label">
+			    	<button id="cancelBtn">Cancel</button>
+			    <button id="saveBtn">Save</button>
+				</p>
+			</fieldset>
+		</form>
+	</div>
+
+	<div id="catDisplay">
+		<img id="catPhoto" src="">
+		<p id="catName"></p>
+		<p id="catCount"></p>
 	</div>
     <script src="js/main.js"></script>
 </body>
